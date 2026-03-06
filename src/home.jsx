@@ -32,11 +32,9 @@ function Home() {
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
                         <p style={{ fontSize: '18px', fontWeight: '500' }}>Welcome back, <span style={{ color: 'var(--primary)' }}>{user.username}</span></p>
                         <div style={{ display: 'flex', gap: '16px' }}>
-                            {(user.role === 'HR' || user.role === 'MANAGER') && (
-                                <button className="btn-premium" onClick={() => navigate("/dashboard")}>
-                                    Go to Dashboard
-                                </button>
-                            )}
+                            <button className="btn-premium" onClick={() => navigate("/dashboard")}>
+                                Go to Dashboard
+                            </button>
                             <button className="btn-premium" style={{ background: 'transparent', border: '1px solid var(--glass-border)' }} onClick={logout}>
                                 Logout
                             </button>
