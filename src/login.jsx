@@ -16,7 +16,7 @@ function Login() {
     const submit = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post("http://localhost:8080/login", data)
+            const res = await axios.post("https://backendrender-4w2u.onrender.com/login", data)
             const user = res.data
             localStorage.setItem("user", JSON.stringify(user))
             alert("Login Successful!")

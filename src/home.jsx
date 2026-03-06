@@ -22,7 +22,7 @@ function Home() {
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '20px' }}>
             <div className="glass-card" style={{ padding: '60px', maxWidth: '800px', width: '100%' }}>
                 <h1 style={{ fontSize: '56px', fontWeight: '800', marginBottom: '24px', background: 'linear-gradient(to right, #6366f1, #10b981)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                    Antigravity Enterprise
+                    Csegh Enterprise
                 </h1>
                 <p style={{ fontSize: '20px', color: 'var(--text-muted)', marginBottom: '40px', lineHeight: '1.6' }}>
                     The ultimate platform for modern company management. Experience power, speed, and premium design in one unified interface.
