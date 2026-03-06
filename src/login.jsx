@@ -28,7 +28,10 @@ function Login() {
                 navigate("/h") // Employee home
             }
         } catch (err) {
-            alert(err.response?.data || "Login failed")
+            const errorMsg = typeof err.response?.data === 'string'
+                ? err.response.data
+                : err.message || "Login failed";
+            alert(errorMsg);
         }
     }
 

@@ -22,7 +22,10 @@ function Reg() {
             alert(res.data)
             navigate("/login")
         } catch (err) {
-            alert(err.response?.data || "Registration failed")
+            const errorMsg = typeof err.response?.data === 'string'
+                ? err.response.data
+                : err.message || "Registration failed";
+            alert(errorMsg);
         }
     }
 
